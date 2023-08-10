@@ -1,7 +1,7 @@
 version = 1
 
 [[analyzers]]
-name = "csharp"
+name = "scala"
 
 [[analyzers]]
 name = "rust"
@@ -10,10 +10,28 @@ name = "rust"
   msrv = "stable"
 
 [[analyzers]]
-name = "scala"
+name = "php"
 
 [[analyzers]]
-name = "php"
+name = "ruby"
+
+[[analyzers]]
+name = "javascript"
+
+[[analyzers]]
+name = "csharp"
+
+[[analyzers]]
+name = "go"
+
+  [analyzers.meta]
+  import_root = "github.com/rohank-deepsource/Gigarepo"
+
+[[analyzers]]
+name = "python"
+
+  [analyzers.meta]
+  runtime_version = "3.x.x"
 
 [[analyzers]]
 name = "java"
@@ -23,30 +41,3 @@ name = "java"
 
 [[analyzers]]
 name = "shell"
-
-[[analyzers]]
-name = "javascript"
-
-[[analyzers]]
-name = "ruby"
-
-[[analyzers]]
-name = "go"
-
-  [analyzers.meta]
-  import_root = "github.com/rohankmr-deepsource/Gigarepo"
-
-[[analyzers]]
-name = "python"
-
-  [analyzers.meta]
-  runtime_version = "3.x.x"
-
-[[transformers]]
-name = "prettier"
-
-[[transformers]]
-name = "gofumpt"
-
-[[transformers]]
-name = "autopep8"
